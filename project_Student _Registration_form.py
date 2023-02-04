@@ -61,8 +61,8 @@ def submit():
     Email=e9.get()
 
     import mysql.connector
-    connection=mysql.connector.connect(host='localhost',username='root', password='mcpassword', 
-                               database='cgc_landran')
+    connection=mysql.connector.connect(host='localhost',username='root', password='yourpassword', 
+                               database='your_database_name')
     # table create
     create_query='''create table  if not exists details 
                     (first_name text,Last_name varchar(10),branch text,address text,contact_no long,Tenth_percentage int,Twelfth_percentage int, email varchar(100));'''
